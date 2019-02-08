@@ -15,7 +15,7 @@ RUN set -x; \
     apt-get remove -y python3-dev gcc && \
     apt-get install git -y && \
     apt-get autoremove -y && \
-    apt-get install python3-venv -y \
+    apt-get install python3-venv -y && \
     apt-get clean all && \
     curl -SL https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz | tar xzf - -C /usr/bin
 
